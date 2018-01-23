@@ -6,7 +6,7 @@
 * @copyright Wout Fierens <wout@mick-wout.com>
 * @license MIT
 *
-* BUILT: Fri Jul 21 2017 14:50:37 GMT+0200 (Mitteleuropäische Sommerzeit)
+* BUILT: Tue Jan 23 2018 13:52:27 GMT+0800 (CST)
 */;
 (function(root, factory) {
   /* istanbul ignore next */
@@ -22,7 +22,8 @@
 }(typeof window !== "undefined" ? window : this, function(window, document) {
 
 // The main wrapping element
-var SVG = this.SVG = function(element) {
+
+var SVG = function(element) {
   if (SVG.supported) {
     element = new SVG.Doc(element)
 
@@ -31,6 +32,10 @@ var SVG = this.SVG = function(element) {
 
     return element
   }
+}
+
+if (!this) {
+    this.SVG = SVG
 }
 
 // Default namespaces

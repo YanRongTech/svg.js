@@ -1,5 +1,6 @@
 // The main wrapping element
-var SVG = this.SVG = function(element) {
+
+var SVG = function(element) {
   if (SVG.supported) {
     element = new SVG.Doc(element)
     
@@ -8,6 +9,10 @@ var SVG = this.SVG = function(element) {
       
     return element
   }
+}
+
+if (!this) {
+    this.SVG = SVG
 }
 
 // Default namespaces
