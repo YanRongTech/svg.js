@@ -11,7 +11,7 @@ var SVG = function(element) {
   }
 }
 
-if (!this) {
+if (this) {
     this.SVG = SVG
 }
 

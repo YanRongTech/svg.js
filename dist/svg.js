@@ -6,7 +6,7 @@
 * @copyright Wout Fierens <wout@mick-wout.com>
 * @license MIT
 *
-* BUILT: Tue Jan 23 2018 13:52:27 GMT+0800 (CST)
+* BUILT: Tue Jan 23 2018 13:55:19 GMT+0800 (CST)
 */;
 (function(root, factory) {
   /* istanbul ignore next */
@@ -34,7 +34,7 @@ var SVG = function(element) {
   }
 }
 
-if (!this) {
+if (this) {
     this.SVG = SVG
 }
 
